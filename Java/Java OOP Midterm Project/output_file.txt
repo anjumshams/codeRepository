@@ -1,0 +1,30 @@
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Rhombus [diagonal_1=5.0, diagonal_2=7.0]
+Area = 17.5
+GeometricShape [color=blue]Rhombus [diagonal_1=5.0, diagonal_2=7.0]
+Area = 17.5
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
+GeometricShape [color=blue]Square [side=5.3]
+Area = 28.09
+GeometricShape [color=blue]Circle [radius=3.0]
+Area = 28.278
