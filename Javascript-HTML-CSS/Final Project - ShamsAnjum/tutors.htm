@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>A Plus Tutors</title>
+<meta charset="UTF-8" />
+
+<!--
+Filename: Tutors.htm
+Author: Anjum Shams
+Date:   7/23/20 
+Supporting files: clock.js, logo.jpg, tutors.css, homepage.jpg, time.js
+-->
+   
+   <link href="tutors.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="timetxt.js"></script>
+
+   <script type="text/javascript">
+      function countDownClock() {
+
+         // Create variables
+         var thisDay = new Date();       
+         var start = new Date("March 23, 2020 09:00:00");
+
+         // Determine the current year
+         currentYear = thisDay.getFullYear();
+         start.setFullYear(currentYear);
+         startYear = (start - thisDay) < 0 ? currentYear+1 : currentYear;
+         start.setFullYear(startYear);
+
+	 // Get elements by ID
+         document.getElementById("clock").dayNow.value=showDate(thisDay);
+         document.getElementById("clock").timeNow.value=showTime(thisDay);
+         document.getElementById("clock").days.value=daysDiff(thisDay, start);
+         document.getElementById("clock").hours.value=hoursDiff(thisDay, start);
+         document.getElementById("clock").minutes.value=minutesDiff(thisDay, start);
+      } 
+   </script> 
+</head>
+
+<body onload="countDownClock();setInterval('countDownClock()', 60000)">
+
+   <div id="website">
+      <form id="clock">
+
+      <div id="symbol">
+         <img src="logo.jpg" alt="Cutler Shopping Mall" style="float: left" /> 
+
+         <div id="time">
+            <label id="currentTime">Today's Date and Time</label>
+
+            <input type="text" id="dayNow" name="dayNow" size="19" />
+            <input type="text" id="timeNow" name="timeNow" size="14" />
+            <br />
+            <br />
+            <label id="timeleft">Days left for the Grand Opening</label>
+            <input type="text" id="days" name="days" size="3" />
+            <label for="days">days</label>
+            <input type="text" id="hours" name="hours" size="3" />
+            <label for="hours">hrs.</label>
+            <input type="text" id="minutes" name="minutes" size="3" />
+            <label for="minutes">min.</label>
+         </div>
+
+      </div>
+
+      <ul id="links">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Registration</a></li>
+         <li><a href="#">Math</a></li>
+         <li><a href="#">Science</a></li>
+         <li><a href="#">English</a></li>
+         <li><a href="#">Standardized Tests</a></li>
+         <li><a href="#">Contact Us</a></li>
+      </ul>
+
+
+      <div id="Info">
+
+         <h1>Opening Soon!</h1>
+	 <img src="homepage.jpg" alt="" style="float: right; margin: 0px 0px 5px 5px" />
+         <p>
+         The A Plus Tutors is planning a GRAND grand opening of their new branch. 
+         Plan to join us on March 23rd at 9am for this special event!</p>
+
+         <h2>About us</h2>
+         <p>For almost 25 years, we have treated students as individuals, and tailored
+ our tutoring programs to fit their unique needs, academic goals and schedules. The best
+ part? Our tutoring centers are proven to accelerate academic results, so you can trust 
+us to help your child succeed. Our proven method begins with a full academic evaluation 
+to pinpoint needs. We then develop a personalized learning plan and build success through 
+individualized instruction.</p>
+
+         <p>Why choose APlus Tutors?
+		Tutoring Results: 2+ Grade levels growth in Reading and Math
+		ACT Results: 4+ Point increase on ACT score
+		SAT Results: 200+ Point increase on SAT score
+In addition to outstanding academic results, we help students build confidence and motivation to succeed.
+Our programs are affordable for every budget, and we offer flexible payment options to meet your needs.
+Register your next class today!</p>
+
+         <h3>Hours</h3>
+         <ul>
+            <li>Monday - Saturday: 10am - 9pm</li>
+            <li>Sunday: 11am - 6pm</li>
+         </ul>
+
+         <h3>Address</h3>
+         <address>
+            A Plus Tutors &#183;
+            20050 Enterprise Avenue &#183;
+            Cutler, IA 43109 &#183;
+            (281) 555-9081
+         </address>
+
+      </div>
+      </form>
+   </div>
+</body>
+</html>

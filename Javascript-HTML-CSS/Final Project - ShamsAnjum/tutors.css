@@ -1,0 +1,116 @@
+/*
+Filename: tutors.css
+Author: Anjum Shams
+Date:   7/23/20
+*/
+
+body {
+   font-family: "Times New Roman", Times, serif;
+   background: #DCDCDC 
+}
+
+#symbol {
+   position: absolute;
+   width: 100%;
+   top: 10px;
+   left: 10px;
+}
+
+#website {
+   position: center;
+   top: 15px;
+   left: 15px;
+   width: 700px;
+}
+
+#time {
+   width: 500px;
+   height: 90px
+   border: 1px solid black;
+   float: right;
+   margin-left: 10px;
+   background-color: #6495ED;
+   padding: 15px;
+}
+
+#time label {
+   font-size: 16px;
+   color: white;
+}
+
+#Info {
+   position: absolute;
+   top: 140px;
+   left: 140px;
+}
+
+#Info img {
+   padding-left: 0px;
+   margin-left: 0px;
+}
+
+#links {
+   background-color: #6495ED;
+   list-style-type: none;
+   width: 120px;
+   position: absolute;
+   top: 140px;
+   left: 10px;
+   margin-left: 5px;
+   padding-left: 0px;
+}
+
+#links a {
+   width: 100%;
+   display: block;
+   margin: 15px 0px; 
+   color: white;
+}
+
+#links a:hover {
+   color: white;
+   background-color: blue;
+}
+
+input {
+   display: block;
+   float: left;
+}
+
+label {
+   display: block;
+   float: left;
+}
+
+#timeleft {
+   width: 140px;
+}
+
+#currentTime {
+   width: 140px;
+}
+
+input {
+   margin-left: 10px;
+   margin-right: 10px;
+   text-align: right;
+}
+
+h1 {
+   letter-spacing: 10px;
+   color: white;
+   background-color: #00008B;
+}
+
+h2 {
+   letter-spacing: 10px;
+   color: white;
+   background-color: #00008B;
+}
+
+h3 {
+   letter-spacing: 5px;
+   font-weight: bold;
+   color: #00008B;
+   
+}
